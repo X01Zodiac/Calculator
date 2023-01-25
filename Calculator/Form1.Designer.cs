@@ -44,6 +44,8 @@
             this.buttonDivid = new System.Windows.Forms.Button();
             this.buttonEqual = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonClear = new System.Windows.Forms.Button();
+            this.buttonDot = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonOne
@@ -198,16 +200,38 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(266, 120);
+            this.textBox1.Location = new System.Drawing.Point(266, 132);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(194, 27);
             this.textBox1.TabIndex = 15;
+            // 
+            // buttonClear
+            // 
+            this.buttonClear.Location = new System.Drawing.Point(366, 270);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(94, 29);
+            this.buttonClear.TabIndex = 16;
+            this.buttonClear.Text = "Clear";
+            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
+            // 
+            // buttonDot
+            // 
+            this.buttonDot.Location = new System.Drawing.Point(166, 270);
+            this.buttonDot.Name = "buttonDot";
+            this.buttonDot.Size = new System.Drawing.Size(94, 29);
+            this.buttonDot.TabIndex = 17;
+            this.buttonDot.Text = ".";
+            this.buttonDot.UseVisualStyleBackColor = true;
+            this.buttonDot.Click += new System.EventHandler(this.buttonDot_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 450);
+            this.Controls.Add(this.buttonDot);
+            this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.buttonEqual);
             this.Controls.Add(this.buttonDivid);
@@ -250,5 +274,7 @@
         private Button buttonDivid;
         private Button buttonEqual;
         private TextBox textBox1;
+        private Button buttonClear;
+        private Button buttonDot;
     }
 }
